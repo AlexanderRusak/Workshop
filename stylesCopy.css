@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+* {
+  font-family: "Exo 2", sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, #c33764 0%, #1d2671 100%);
+  overflow-x: hidden;
+}
+.title-section {
+  display: flex;
+  justify-content: center;
+}
+.title-section h1 {
+  color: #fff;
+  font-size: 90px;
+  font-weight: 800;
+  font-style: normal;
+  margin-top: 50px;
+  padding-right: 22px;
+  margin-bottom: 0;
+}
+.about-section {
+  display: flex;
+  justify-content: center;
+}
+.about-section h2 {
+  width: 70%;
+  padding-left: 6px;
+  line-height: 54px;
+  word-spacing: 0px;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 12px;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100vw - 260px);
+  margin-top: 42px;
+}
+.application-field {
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 47.458%;
+  min-width: 335px;
+}
+.application-field textarea {
+  width: 100%;
+  height: 240px;
+  border: 2px solid #D448B5;
+  border-radius: 20px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 18px;
+}
+.application-field textarea::placeholder {
+  color: #b1afaf;
+}
+.application-field .application-field-select-button {
+  background-color: #D448B5;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-top: 30px;
+  outline: none;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 70px;  
+  color: #FFFFFF; 
+}
+.application-field .application-field-select-button:hover {
+  background-color: #EA95D7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+.application-field .application-field-select-button:active {
+  background-color: #9F508E;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(4px); 
+}
+main .image-ai {
+  width: 47.458%;
+  height: 340px;
+  background: url("./image/brain-ai.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 335px;
+  border-radius: 20px;
+}
+.developers-info {
+  width: calc(100vw - 260px);
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+.developers-info .developers-info-block {
+  margin-top: 138.81px;
+  height: 60px;
+  background-color: #FFFFFF;
+  border: 2px solid #D448B5;
+  border-radius: 20px;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #5C5C5C;
+}
+@media screen and (max-width: 931px) {
+  .title-section h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .about-section h2 {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 30px;
+    width: 88.947%;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .application-field {
+    margin-top: 30px;
+  }
+  .developers-info .developers-info-block {
+    margin-top: 60px;
+  }
+  main .image-ai {
+    width: 88.947%;
+  }
+  .application-field {
+    width: 88.947%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  main {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main .image-ai {
+    height: 205px;
+  }
+}
