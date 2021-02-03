@@ -82,7 +82,7 @@ main {
   outline: none;
 }
 main .image-ai {
-  width: 47.458%;
+  width: 47.458%;  
   height: 340px;
   background: url("../image/brain-ai.svg") no-repeat;
   background-size: cover;
