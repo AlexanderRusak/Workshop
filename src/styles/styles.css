@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700;800;900&display=swap");
 * {
   font-family: "Exo 2", sans-serif;
 }
@@ -22,7 +22,7 @@ body {
   font-weight: 800;
   line-height: 108px;
   font-style: normal;
-  margin-top: 21px;
+  margin-top: 35px;
   padding-right: 22px;
   margin-bottom: 0;
 }
@@ -32,23 +32,23 @@ body {
 }
 .about-section h2 {
   width: 70%;
+  font-weight: 700;
   padding-left: 6px;
   line-height: 60px;
   word-spacing: 0px;
   font-size: 50px;
   text-align: center;
   color: #fff;
-  font-weight: bold;
   font-style: normal;
-  margin-top: 22px;
+  margin-top: 37px;
 }
 main {
   display: flex;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  width: calc(100vw - 740px);
-  margin-top: 79px;
+  width: calc(100vw - 260px);
+  margin-top: 90px;
 }
 .application-field {
   justify-items: center;
@@ -61,10 +61,10 @@ main {
 .application-field textarea {
   width: 100%;
   height: 240px;
-  border: 2px solid #D448B5;
+  border: 2px solid #d448b5;
   border-radius: 20px;
   box-sizing: border-box;
-  outline: none;  
+  outline: none;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 30px;
@@ -77,7 +77,7 @@ main {
   color: #b1afaf;
 }
 .application-field .application-field-select-button {
-  background-color: #D448B5;
+  background-color: #d448b5;
   width: 100%;
   height: 66px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -88,20 +88,20 @@ main {
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  line-height: 70px;  
-  color: #FFFFFF;
+  line-height: 70px;
+  color: #ffffff;
 }
 .application-field .application-field-select-button:hover {
-  background-color: #EA95D7;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  background-color: #ea95d7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .application-field .application-field-select-button:active {
-  background-color: #9F508E;
+  background-color: #9f508e;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transform: translateY(4px); 
+  transform: translateY(4px);
 }
 main .image-ai {
-  width: 47.458%;  
+  width: 47.458%;
   height: 340px;
   background: url("../image/brain-ai.svg") no-repeat;
   background-size: cover;
@@ -119,8 +119,8 @@ main .image-ai {
 .developers-info .developers-info-block {
   margin-top: 173px;
   height: 90px;
-  background-color:#FFFFFF;
-  border: 2px solid #D448B5;
+  background-color: #ffffff;
+  border: 2px solid #d448b5;
   border-radius: 20px;
   outline: none;
   display: flex;
@@ -131,7 +131,7 @@ main .image-ai {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #5C5C5C;
+  color: #5c5c5c;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -140,18 +140,18 @@ main .image-ai {
   width: 40px;
   height: 40px;
   margin-right: 20px;
-  vertical-align: middle;  
+  vertical-align: middle;
 }
 .social-gh {
-  background-color: #D448B5;
+  background-color: #d448b5;
   background-position: 0 0;
 }
 .social-vk {
-  background-color: #D448B5;
+  background-color: #d448b5;
   background-position: -40px 0;
 }
 .social-fb {
-  background-color: #D448B5;
+  background-color: #d448b5;
   background-position: -80px 0;
 }
 @media screen and (max-width: 931px) {
