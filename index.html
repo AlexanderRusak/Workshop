@@ -5,46 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <title>Antiplagiarism</title>
 </head>
 
 <body>
     <section class="main-container">
-        <section class="title-section">
-            <h1>text.AI</h1>
-        </section>
-        <section class="about-section">
-            <h2>Intelligent App for text processing</h2>
-        </section>
-        <main>
-            <section class="application-field">
-                <textarea placeholder="Input text..."></textarea>
-                <section class="application-field-select-button">Check</section>
+        <section class="container">
+            <section class="title-section">
+                <h1>text.AI</h1>
+            </section>
+            <section class="about-section">
+                <h2>Intelligent App for text processing</h2>
+            </section>
+            <main>
+                <section class="application-field">
+                    <form action="#">
+                        <textarea placeholder="Input text..."></textarea>
+                        <section class="application-options">
 
+                            <select class="application-select" name="application-select" id="">
+                                <option value="Uniqueness">Uniqueness</option>
+                                <option value="Repetition">Repetition</option>
+                                <option value="Misprint">Misprint</option>
+                                <option value="Validation">Validation</option>
+                            </select>
+                            <input value="Check" type="submit" class="application-field-select-button" />
+                        </section>
+
+                    </form>
                 </section>
                 <section class="image-ai">
                 </section>
-            </section>
+            </main>
+            <section class="developers-info">
 
-        
 
-        </main>
-        <section class="developers-info">
-<<<<<<< Updated upstream
-            <section class="developers-info-block">
-
-            </section>
-=======
                 <section class="developers-info-block">
-                    <section class="developers-info-block-text-left">INCUBATOR</section>
-                    <section class="developers-info-block-text-middle">Alex & Vital, 2021</section>
+                    <section class="developers-info-block-text-left"></section>
+                    <section class="developers-info-block-text-middle">Nickname, year</section>
                     <section class="developers-info-block-text-right">
-                        <section class="social social-gh" href="https://github.com"></section>
-                        <section class="social social-vk" href="https://vk.com"></section>
-                        <section class="social social-fb" href="https://www.facebook.com"></section>                        
+                        <section class="social social-gh" href="https://github.com"><i class="fab fa-github"></i>
+                        </section>
+                        <section class="social social-vk" href="https://vk.com"><i class="fab fa-vk"></i></section>
+                        <section class="social social-fb" href="https://www.facebook.com"><i
+                                class="fab fa-facebook-square"></i></section>
                     </section>
                 </section>
->>>>>>> Stashed changes
+            </section>
         </section>
     </section>
 

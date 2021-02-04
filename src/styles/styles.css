@@ -7,10 +7,16 @@ body {
   margin: 0;
 }
 .main-container {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100vh;
   background: linear-gradient(90deg, #c33764 0%, #1d2671 100%);
   overflow-x: hidden;
+}
+.container {
+  width: calc(100vw - 260px);
+  margin-bottom: 82px;
 }
 .title-section {
   display: flex;
@@ -31,7 +37,6 @@ body {
   justify-content: center;
 }
 .about-section h2 {
-  width: 70%;
   font-weight: 700;
   padding-left: 6px;
   line-height: 60px;
@@ -47,7 +52,7 @@ main {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  width: calc(100vw - 260px);
+  width: 100%;
   margin-top: 90px;
 }
 .application-field {
@@ -56,8 +61,15 @@ main {
   flex-direction: column;
   justify-content: space-between;
   width: 47.458%;
-  min-width: 335px;
 }
+.application-field .application-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+  margin-top: 27px;
+}
+
 .application-field textarea {
   width: 100%;
   height: 240px;
@@ -76,20 +88,27 @@ main {
 .application-field textarea::placeholder {
   color: #b1afaf;
 }
+.application-field .application-options .application-select {
+  align-self: center;
+  height: 100%;
+  width: 57%;
+  border-radius: 10px;
+  border: 2px solid #191f82;
+}
 .application-field .application-field-select-button {
   background-color: #d448b5;
-  width: 100%;
-  height: 66px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  margin-top: 19px;
+  height: 100%;
+  width: 40%;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 10px;
   outline: none;
   text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  line-height: 70px;
+  line-height: 65px;
   color: #ffffff;
+  padding-right: 1px;
 }
 .application-field .application-field-select-button:hover {
   background-color: #ea95d7;
@@ -106,22 +125,21 @@ main .image-ai {
   background: url("../image/brain-ai.svg") no-repeat;
   background-size: cover;
   background-position: center;
-  min-width: 335px;
-  border-radius: 20px;
+  
+  border-radius: 10px;
 }
 .developers-info {
-  width: calc(100vw - 740px);
+  width: 100%;
   height: 60px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
 }
 .developers-info .developers-info-block {
-  margin-top: 173px;
-  height: 90px;
+  margin-top: 140px;
+  height: 85px;
   background-color: #ffffff;
   border: 2px solid #d448b5;
-  border-radius: 20px;
+  border-radius: 10px;
   outline: none;
   display: flex;
   justify-content: space-between;
@@ -132,39 +150,36 @@ main .image-ai {
   line-height: 29px;
   text-align: center;
   color: #5c5c5c;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
-.developers-info-block-text-right .social {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin-right: 20px;
-  vertical-align: middle;
+.developers-info .developers-info-block .developers-info-block-text-left {
+  background-image: url("../image//incubator-logo.svg");
+  background-repeat: no-repeat;
+  width: 163px;
+  height: 33px;
+  margin-left: 5px;
 }
-.social-gh {
-  background-color: #d448b5;
-  background-position: 0 0;
+.developers-info .developers-info-block .developers-info-block-text-right {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
 }
-.social-vk {
-  background-color: #d448b5;
-  background-position: -40px 0;
-}
-.social-fb {
-  background-color: #d448b5;
-  background-position: -80px 0;
+.developers-info-block-text-right .social i {
+  font-size: 40px;
+  color: #d448b5;
 }
 @media screen and (max-width: 931px) {
   .title-section h1 {
     color: #fff;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 800;
     font-style: normal;
     margin-top: 50px;
     margin-bottom: 0;
   }
   .about-section h2 {
-    font-size: 16px;
+    font-size: 30px;
     text-align: center;
     color: #fff;
     font-weight: bold;
@@ -176,6 +191,7 @@ main .image-ai {
     display: flex;
     justify-content: center;
     flex-wrap: wrap-reverse;
+    margin-top: 30px;
   }
   .application-field {
     margin-top: 30px;
@@ -184,14 +200,29 @@ main .image-ai {
     margin-top: 60px;
   }
   main .image-ai {
-    width: 88.947%;
+    width: 100%;
   }
   .application-field {
-    width: 88.947%;
+    width: 100%;
+  }
+  .developers-info .developers-info-block {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+  }
+  .developers-info .developers-info-block section {
+    margin: 15px;
+  }
+  .developers-info .developers-info-block .developers-info-block-text-right{
+    width: auto;
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 426px) {
+  .container {
+    width: calc(100vw - 40px);
+    margin-bottom: 82px;
+  }
   main {
     display: flex;
     justify-content: center;
