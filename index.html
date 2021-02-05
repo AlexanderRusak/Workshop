@@ -17,10 +17,11 @@
                 <h1>text.AI</h1>
             </section>
             <section class="about-section">
-                <h2>Intelligent App for text processing</h2>
+                <h2 id="about-section-main-header">Intelligent App for text processing</h2>
+                <h2 id="about-section-result-header">The result of checking the text for uniqueness</h2>
             </section>
             <main>
-                <section class="application-field">
+                <section id="application-field" class="application-field">
                     <form action="#">
                         <textarea placeholder="Input text..."></textarea>
                         <section class="application-options">
@@ -31,32 +32,49 @@
                                 <option value="Misprint">Misprint</option>
                                 <option value="Validation">Validation</option>
                             </select>
-                            <input value="Check" type="submit" class="application-field-select-button" />
+                            <input id="submit-button" value="Check" type="submit"
+                                class="application-field-select-button" />
                         </section>
 
                     </form>
                 </section>
-                <section class="image-ai">
+                <section id="image-ai" class="image-ai">
+                </section>
+                <section id="result-section" class="result-section">
+                    <section class="result-banner">
+                        <section class="result-icon"></section>
+                        <p>Your text is 60% unique</p>
+                    </section>
+                    <button id="back-button" class="result-button">
+                        <p>Back</p>
+                    </button>
                 </section>
             </main>
             <section class="developers-info">
-
-
                 <section class="developers-info-block">
-                    <section class="developers-info-block-text-left"></section>
+                    <a href="#">
+                        <section class="developers-info-block-text-left"></section>
+                    </a>
                     <section class="developers-info-block-text-middle">Nickname, year</section>
                     <section class="developers-info-block-text-right">
-                        <section class="social social-gh" href="https://github.com"><i class="fab fa-github"></i>
-                        </section>
-                        <section class="social social-vk" href="https://vk.com"><i class="fab fa-vk"></i></section>
-                        <section class="social social-fb" href="https://www.facebook.com"><i
-                                class="fab fa-facebook-square"></i></section>
+                        <a href="#">
+                            <section class="social social-gh" href="https://github.com"><i class="fab fa-github"></i>
+                            </section>
+                        </a>
+                        <a href="#">
+                            <section class="social social-vk" href="https://vk.com"><i class="fab fa-vk"></i></section>
+                        </a>
+                        <a href="#">
+                            <section class="social social-fb" href="https://www.facebook.com"><i
+                                    class="fab fa-facebook-square"></i></section>
+                        </a>
+
                     </section>
                 </section>
             </section>
         </section>
     </section>
-
+    <script src="./src/scripts/script.js"></script>
 </body>
 
 </html>
