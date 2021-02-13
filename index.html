@@ -5,36 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/styles.css">
-    <title>Workshop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Antiplagiarism</title>
 </head>
 
 <body>
     <section class="main-container">
-        <section class="title-section">
-            <h1>text.AI</h1>
-        </section>
-        <section class="about-section">
-            <h2>A word processor with artificial intelligence elements</h2>
-        </section>
-        <main>
-            <section class="application-field">
-                <textarea placeholder="Enter text here to check for uniqueness"></textarea>
-                <section class="application-field-select-button">
+        <section class="container">
+            <section class="title-section">
+                <h1>text.AI</h1>
+            </section>
+            <section class="about-section">
+                <h2 id="about-section-main-header">Intelligent App for text processing</h2>
+                <h2 id="about-section-result-header">The result of checking the text for uniqueness</h2>
+            </section>
+            <main>
+                <section id="application-field" class="application-field">
+                    <form action="#">
+                        <textarea placeholder="Input text..."></textarea>
+                        <section class="application-options">
 
+                            <select class="application-select" name="application-select" id="">
+                                <option value="Uniqueness">Uniqueness</option>
+                                <option value="Repetition">Repetition</option>
+                                <option value="Misprint">Misprint</option>
+                                <option value="Validation">Validation</option>
+                            </select>
+                            <input id="submit-button" value="Check" type="submit"
+                                class="application-field-select-button" />
+                        </section>
+
+                    </form>
+                </section>
+                <section id="image-ai" class="image-ai">
+                </section>
+                <section id="result-section" class="result-section">
+                    <section class="result-banner">
+                        <section class="result-icon"></section>
+                        <p>Your text is 60% unique</p>
+                    </section>
+                    <button id="back-button" class="result-button">
+                        <p>Back</p>
+                    </button>
+                </section>
+            </main>
+            <section class="developers-info">
+                <section class="developers-info-block">
+                    <a href="#">
+                        <section class="developers-info-block-text-left"></section>
+                    </a>
+                    <section class="developers-info-block-text-middle">Nickname, year</section>
+                    <section class="developers-info-block-text-right">
+                        <a href="#">
+                            <section class="social social-gh" href="https://github.com"><i class="fab fa-github"></i>
+                            </section>
+                        </a>
+                        <a href="#">
+                            <section class="social social-vk" href="https://vk.com"><i class="fab fa-vk"></i></section>
+                        </a>
+                        <a href="#">
+                            <section class="social social-fb" href="https://www.facebook.com"><i
+                                    class="fab fa-facebook-square"></i></section>
+                        </a>
+
+                    </section>
                 </section>
             </section>
-
-            <picture class="image-ai">
-            </picture>
-
-        </main>
-        <section class="developers-info">
-                <section class="developers-info-block">
-
-                </section>
         </section>
     </section>
-
+    <script src="./src/scripts/script.js"></script>
 </body>
 
 </html>
